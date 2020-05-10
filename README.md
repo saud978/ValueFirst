@@ -6,13 +6,14 @@ This is a public iOS library
 to use
 Add library to your project
 
-How to use
+## How to use
+
 ```Swift
 // Create a ValueFirst object with parameters
 let obj:ValueFirst = ValueFirst(username: "username", password: "password", senderName: "SENDERNAME")
 
 // to get credit
-_ = valueFirst.getCredits(completionBlock: { (output) in
+valueFirst.getCredits(completionBlock: { (output) in
             print("Credit: \(output.limit) /n Used: \(output.used) \n Balance: \(output.balance)")
         })
 
