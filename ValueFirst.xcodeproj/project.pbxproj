@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A34244BB966F3CBE13CAD2E5 /* Pods_ValueFirst.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B2944795C759E9AF424C69A /* Pods_ValueFirst.framework */; };
 		C314D78F24684AD700B7918A /* ValueFirst.swift in Sources */ = {isa = PBXBuildFile; fileRef = C314D78E24684AD700B7918A /* ValueFirst.swift */; };
 /* End PBXBuildFile section */
 
@@ -23,8 +24,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		50414A44534A2F71E5F997FC /* Pods-ValueFirst.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ValueFirst.debug.xcconfig"; path = "Target Support Files/Pods-ValueFirst/Pods-ValueFirst.debug.xcconfig"; sourceTree = "<group>"; };
+		5B2944795C759E9AF424C69A /* Pods_ValueFirst.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ValueFirst.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C314D78B24684AD700B7918A /* libValueFirst.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libValueFirst.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C314D78E24684AD700B7918A /* ValueFirst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValueFirst.swift; sourceTree = "<group>"; };
+		D62436549E594FAAFDF9EDC9 /* Pods-ValueFirst.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ValueFirst.release.xcconfig"; path = "Target Support Files/Pods-ValueFirst/Pods-ValueFirst.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,17 +36,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A34244BB966F3CBE13CAD2E5 /* Pods_ValueFirst.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6AEC30BC1D4EAC96F7E56994 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				50414A44534A2F71E5F997FC /* Pods-ValueFirst.debug.xcconfig */,
+				D62436549E594FAAFDF9EDC9 /* Pods-ValueFirst.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B5F3F0C4A8E99C03032B232C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5B2944795C759E9AF424C69A /* Pods_ValueFirst.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C314D78224684AD700B7918A = {
 			isa = PBXGroup;
 			children = (
 				C314D78D24684AD700B7918A /* ValueFirst */,
 				C314D78C24684AD700B7918A /* Products */,
+				6AEC30BC1D4EAC96F7E56994 /* Pods */,
+				B5F3F0C4A8E99C03032B232C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -69,6 +94,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C314D79224684AD700B7918A /* Build configuration list for PBXNativeTarget "ValueFirst" */;
 			buildPhases = (
+				A8564E06A827BC5B22AD6415 /* [CP] Check Pods Manifest.lock */,
 				C314D78724684AD700B7918A /* Sources */,
 				C314D78824684AD700B7918A /* Frameworks */,
 				C314D78924684AD700B7918A /* CopyFiles */,
@@ -114,6 +140,31 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A8564E06A827BC5B22AD6415 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ValueFirst-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C314D78724684AD700B7918A /* Sources */ = {
@@ -243,6 +294,7 @@
 		};
 		C314D79324684AD700B7918A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 50414A44534A2F71E5F997FC /* Pods-ValueFirst.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RXEJ239YAW;
@@ -256,6 +308,7 @@
 		};
 		C314D79424684AD700B7918A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D62436549E594FAAFDF9EDC9 /* Pods-ValueFirst.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RXEJ239YAW;
