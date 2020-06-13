@@ -1,0 +1,6 @@
+framework module Pods_ValueFirst {
+  umbrella header "Pods-ValueFirst-umbrella.h"
+
+  export *
+  module * { export * }
+}

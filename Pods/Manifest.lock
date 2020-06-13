@@ -1,0 +1,25 @@
+PODS:
+  - PhoneNumberKit (3.2.0):
+    - PhoneNumberKit/PhoneNumberKitCore (= 3.2.0)
+    - PhoneNumberKit/UIKit (= 3.2.0)
+  - PhoneNumberKit/PhoneNumberKitCore (3.2.0)
+  - PhoneNumberKit/UIKit (3.2.0):
+    - PhoneNumberKit/PhoneNumberKitCore
+  - SWXMLHash (5.0.1)
+
+DEPENDENCIES:
+  - PhoneNumberKit (~> 3.1)
+  - SWXMLHash (~> 5.0.0)
+
+SPEC REPOS:
+  trunk:
+    - PhoneNumberKit
+    - SWXMLHash
+
+SPEC CHECKSUMS:
+  PhoneNumberKit: df411d46177d1492da84e10b6c093846dd861452
+  SWXMLHash: 9cc0c2e4807926c74377724aa8722ee5707a0485
+
+PODFILE CHECKSUM: 4714e2d63391b1ebbed50fa200168d5413da7890
+
+COCOAPODS: 1.9.1
